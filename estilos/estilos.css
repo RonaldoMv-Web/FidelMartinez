@@ -1,0 +1,562 @@
+:root {
+    --color01: #99ccff;
+    --color02: #ffffff;
+    --color03: #000000;
+    --color04: #66ccff;
+    --color05: #fefefe;
+    --color06: #456a96;
+    --colorSombra: #5f5f5f;
+    --sombra: 0 0 6px var(--colorSombra);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(22, 22, 22);
+    
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 10px black;
+    opacity: 90%;
+    z-index: 1;
+    
+    
+}
+
+
+
+.contenedor {
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.logo {
+    height: 60px;
+   
+    
+}
+
+.logo > img {
+    height: 100%;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+.contenedor > .enlaces > a {
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px ;
+    margin-right: 20px;
+    padding: 10px;
+    cursor: pointer;
+  
+}
+
+.contenedor > .enlaces > a:hover {
+    color: orange;
+    transition: all 1s;
+    
+    
+    
+}
+
+.enlaces .iconbuy{
+    color: white;
+    bottom: 5px;
+}
+.botonMenu {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: none;
+    color: white;
+    background-color: rgb(58, 58, 58);
+}
+
+.botonMenu > img {
+    width: 80%;
+    padding-top: 5px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.imgfondo{
+    width: 100%;
+    height: 800px;
+   
+    background-image: url(../imagenes/ciudad.jpg);
+     
+    
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;      
+	background-attachment: fixed;
+    background-position: center top;
+    margin-top: -45px;
+	
+    
+}
+
+ul{
+    color: white;
+    text-shadow: 0px 5px 5px black;
+    text-align: center;
+    position: relative; 
+    bottom: -520px;
+    padding: 20px ;
+    cursor: pointer;
+    
+}
+
+ul{
+    background-color: black;
+    opacity: 70%;
+    padding:40px;
+    transition:all .9s;
+    
+}
+
+ul h1{
+    font-size: 30px;
+    margin-bottom: -10px;
+    border-bottom:  3px solid #ccc;
+    padding: 10px;
+}
+
+ul h2{
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+
+ul :hover{
+    color: white;
+    transition:all .9s;
+    text-shadow: 0px 5px 10px black;
+   
+    
+   
+    
+    
+}
+
+ul h2:hover{
+
+    color: white;
+    transition:all .9s;
+}
+
+.contenedorimg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+article{
+    outline:none;
+    resize:none;
+    text-decoration: none;
+}
+
+.titulo{
+    width: 95%;
+    margin: 20px;
+    height: 70px;
+    background-color: black;
+    
+    padding: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 5px 5px black;
+    cursor: pointer;
+    
+
+}
+.titulo .iconbuy{
+    color:lightblue;
+}
+
+.titulo:hover{
+    border-bottom: 8px solid  #ccc;
+
+}
+
+.cajones{
+    padding: 20px;
+    margin: 20px;
+}
+
+summary{
+    outline:none;
+    resize:none;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+
+.conten2_2{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    
+   
+
+}
+
+ .title5{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid orange ;
+    border-top: 2px solid orange ;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    
+   
+
+}
+.conten2_2 h1{
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid orange ;
+    
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.conten2_2 h2{
+    color: white;
+    background-color: rgb(36, 34, 34);
+    text-shadow: 0px 2px 2px black;
+    
+    padding: 20px 0px 20px 20px;
+           /* TOP RIG BOTT LEF */
+}
+
+.conten2_2 p:hover{
+    border-bottom: 2px solid orange;
+    transition: all 1s;
+}
+
+.conten2_2 .icon {
+    padding: 10px;
+    top: 10px;
+    color: gray;
+}
+.conten2_2 p {
+    color: white;
+    padding: 0px 0px 20px 20px;border-bottom: 2px solid gray ;
+}
+
+.contenIMG{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+    display: grid;
+	grid-gap: 2px;
+
+	grid-template-columns: repeat(2, 1fr);
+    
+    
+}
+
+.contenIMG h1{
+    text-align: 
+    center;
+    color: white;
+    border-bottom: 2px solid orange ;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 35px;
+    cursor: pointer;
+    
+
+}
+
+.contenIMG img{
+    padding-bottom: 10px;
+}
+
+.barraredes {
+        background: #000;
+        opacity: 80%;
+        
+        color: #fff;
+        position: relative;
+        border-top-right-radius: 5%;
+        border-bottom-right-radius: 5%;
+        
+        position: fixed;
+        top: 20%;
+        display: inline-block;
+        
+        width: 6%;
+        text-align: center;
+        cursor: pointer;
+        height: 160px;
+        
+    }
+
+    
+    
+.barraredes span{
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        cursor:pointer; 
+       
+    
+    }
+
+  .icon-facebook2:hover{
+      color: rgb(55, 83, 158);
+    
+    }
+
+    .icon-twitter:hover{
+     color: var(--color04);
+}
+
+.icon-instagram:hover{
+    color: rgb(198, 101, 223);
+}
+
+.icon-github:hover{
+
+    color: lightslategrey;
+}
+ 
+   
+
+    
+  
+    
+
+    footer{
+        background: rgb(0, 0, 0);
+        padding: 60px 0 30px 0;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+       
+        
+       
+    }
+    
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin: auto;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        
+        
+        
+    }
+   
+    
+    .content-foo{
+        text-align: center;
+    }
+    
+    .content-foo h4{
+        color: white;
+        border-bottom: 3px solid orange;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .content-foo p{
+        color: rgb(255, 255, 255);
+        
+        
+    }
+    
+    .titulo-final{
+        text-align: center;
+        font-size: 24px;
+        margin: 20px 0 0 0;
+        color: #9e9797;
+    }
+
+@media screen and (max-width: 800px) {
+    .botonMenu {
+        display: block;
+    }
+
+    .enlaces {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color:black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        
+        transform: translateX(-100%);
+        z-index: 1;
+        opacity: 80%;
+        
+    }
+    
+    .contenedor .enlaces a {
+        color:white;
+        font-size: 18px;
+        border-bottom: 3px solid white;
+        display: inline-block;
+        text-align: center;
+        margin: 20px;
+        
+        
+        
+    }
+
+   
+    .enlacesSeleccion {
+        transform: translateX(0%);
+    }
+
+    .enlaces a .iconbuy {
+        color:white;
+    }
+
+    .enlacesSombra {
+        position: fixed;
+        background-color: rgb(36, 36, 36);
+        opacity: 50%;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(-100%);
+        z-index: 1;
+    }
+
+    .enlacesSeleccionSombra {
+        transform: translateX(0%);
+    }
+
+    header{
+        background-position: center;
+        
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .sobre-nosotros{
+        height: 1300px;
+        
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 100%;
+        
+    }
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo h4{
+        color: white;
+        border-bottom: 1px solid orange;
+        padding: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    ul{
+        font-size: 20px;
+    }
+
+   .barraredes{
+    width: 10%;
+    
+   }
+    
+   
+
+   .barraredes{
+       width: 70px;
+       
+       
+   }
+
+   .contenIMG{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 22, 22);
+    padding: 30px;
+    display: grid;
+	grid-gap: 2px;
+
+	grid-template-columns: repeat(1, 1fr);
+    
+    
+}
+
+}
